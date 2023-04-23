@@ -8,8 +8,8 @@ Chercher les patients
 Supprimer un patient
 Faire des améliorations supplémentaires
 </h3>
-<img src="/src/pictures/img1.png">
+<img src="./pictures/img1.png">
 <h3>
-Chercher les patients par nom  "hassan"
+  Chercher les patients par nom  "hassan"
 </h3>
-<img src="/src/pictures/img1.png">
+<img src="./pictures/img1.png">
