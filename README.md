@@ -13,3 +13,11 @@ Faire des améliorations supplémentaires
   Chercher les patients par nom  "hassan"
 </h3>
 <img src="./pictures/img1.png">
+<h3>
+  ajouter un patient
+</h3>
+<img src="./pictures/img3.png">
+<h3>
+  modifier un patient
+</h3>
+<img src="./pictures/img4.png">
