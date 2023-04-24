@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <!--adding <<xmlns:th="http://www.thymeleaf.org">> to connect with thymleaf-->
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+                xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+                layout:decorate="template1.html"
+>
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -8,12 +11,14 @@
 </head>
 <body>
 
+<div layout:fragment="content1">
+
 <div class="container mt-2">
     <div class="card">
         <div class="card-header">List des Patients</div>
         <div class="card-body">
             <form method="get" th:action="index">
-                <lable>key word</lable>
+                <lable>keyword</lable>
                 <input type="text" name="keyword" th:value="${keyword}">
                 <button type="submit" class="btn btn-primary">Chercher</button>
 
@@ -36,6 +41,9 @@
                     <td>
                         <a onclick="return confirm('etes vous sure?')" th:href="@{delete(id=${p.id},page=${currentPage},keyword=${keyword})}" class="btn btn-danger">delete</a>
                     </td>
+                    <td>
+                        <a  th:href="@{edit(id=${p.id},keyword=${keyword},page=${currentPage})}" class="btn btn-success">edit</a>
+                    </td>
                 </tr>
                 </tbody>
             </table>
@@ -52,7 +60,7 @@
     </div>
 </div>
 
-
+</div>
 
 
 </body>
